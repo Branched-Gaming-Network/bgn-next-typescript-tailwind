@@ -1,3 +1,6 @@
+// Routed page 
+// app\example\page.tsx -> url/example
+
 export default function Example() {
     return (
         <main>
