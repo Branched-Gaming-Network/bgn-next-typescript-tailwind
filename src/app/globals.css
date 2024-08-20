@@ -39,3 +39,5 @@ body {
   background-color: #ee56ff; //Apply css to component
   @apply w-20 h-10;  //Apply tailwind classes to component
 } */
+
+/* TODO : create global button style template */

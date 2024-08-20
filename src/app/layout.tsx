@@ -1,4 +1,4 @@
-// Root Layout for global components
+// Root Layout for global components //
 
 //Imports
 import type { Metadata } from "next";
