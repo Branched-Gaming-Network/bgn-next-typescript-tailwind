@@ -16,7 +16,7 @@ const Navbar = () => {
     }
 
     return ( 
-        <nav className="fixed top-0 right-0 left-0">
+        <nav className="z-20 fixed top-0 right-0 left-0 bg-primary-100 dark:bg-primary-950">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between">
                     {/* Primary Nav and Logo */}
@@ -82,14 +82,14 @@ const Navbar = () => {
             <div className="hidden mobile-menu md:hidden text-center transition duration-500" ref={menuRef}>
                 <Link 
                     href="/" 
-                    className="block font-semibold py-4 px-4 text-sm hover:bg-gray-200" 
+                    className="block font-semibold py-4 px-4 text-sm bg-primary-100/60 dark:bg-primary-950/60 backdrop-blur-md outline-primary-200/30 dark:outline-primary-800/30 outline" 
                     onClick={toggleMobileMenu}
                 >
                     Mobile Item 1
                 </Link>
                 <Link 
                     href="/" 
-                    className="block font-semibold py-4 px-4 text-sm hover:bg-gray-200" 
+                    className="block font-semibold py-4 px-4 text-sm bg-primary-100/60 dark:bg-primary-950/60 backdrop-blur-md outline-primary-200/30 dark:outline-primary-800/30 outline" 
                     onClick={toggleMobileMenu}
                 >
                     Mobile Item 2
