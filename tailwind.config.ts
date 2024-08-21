@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { fontFamily } from "tailwindcss/defaultTheme"
 
 const config: Config = {
   content: [
@@ -13,60 +14,101 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-
+      fontSize: {
+        sm: '0.750rem',
+        base: '1rem',
+        xl: '1.333rem',
+        '2xl': '1.777rem',
+        '3xl': '2.369rem',
+        '4xl': '3.158rem',
+        '5xl': '4.210rem',
+      },
+      fontFamily: {
+        sans: ['var(--font-orbitron)'],
+        mono: ['var(--font-exo2)'],
+      },
+      fontWeight: {
+        normal: '400',
+        semibold: '600',
+        bold: '700',
+        black: '900'
+      },
       // Add custom color palette
       ////Tailwind palette generator | https://uicolors.app/create
       ////Color theory wheel | https://www.canva.com/colors/color-wheel/
+      ////Color & font selection tool | https://www.realtimecolors.com/?colors=1f1f1f-f5f5f5-18c947-cb8686-9f3c3c&fonts=Orbitron-Exo%202
       colors: {
-        'primary': {
-          //base - 500
-          '50': '#effef2',
-          '100': '#dafee2',
-          '200': '#b8fac8',
-          '300': '#80f59e',
-          '400': '#42e66d',
-          '500': '#18c947',//
-          '600': '#0eab38',
-          '700': '#0f862f',
-          '800': '#116a2a',
-          '900': '#105725',
-          '950': '#033011',
+        'text': {
+          50: 'var(--text-50)',
+          100: 'var(--text-100)',
+          200: 'var(--text-200)',
+          300: 'var(--text-300)',
+          400: 'var(--text-400)',
+          500: 'var(--text-500)',
+          600: 'var(--text-600)',
+          700: 'var(--text-700)',
+          800: 'var(--text-800)',
+          900: 'var(--text-900)',
+          950: 'var(--text-950)',
         },
-
+        'background': {
+          50: 'var(--background-50)',
+          100: 'var(--background-100)',
+          200: 'var(--background-200)',
+          300: 'var(--background-300)',
+          400: 'var(--background-400)',
+          500: 'var(--background-500)',
+          600: 'var(--background-600)',
+          700: 'var(--background-700)',
+          800: 'var(--background-800)',
+          900: 'var(--background-900)',
+          950: 'var(--background-950)',
+        },
+        'primary': {
+          50: 'var(--primary-50)',
+          100: 'var(--primary-100)',
+          200: 'var(--primary-200)',
+          300: 'var(--primary-300)',
+          400: 'var(--primary-400)',
+          500: 'var(--primary-500)',
+          600: 'var(--primary-600)',
+          700: 'var(--primary-700)',
+          800: 'var(--primary-800)',
+          900: 'var(--primary-900)',
+          950: 'var(--primary-950)',
+        },
         'secondary': {
-          //base - 800
-          '50': '#f2f2ff',
-          '100': '#e9e8ff',
-          '200': '#d6d3ff',
-          '300': '#b7b0ff',
-          '400': '#9484ff',
-          '500': '#7252ff',
-          '600': '#602ef9',
-          '700': '#511ce5',
-          '800': '#4718c9',//
-          '900': '#39159d',
-          '950': '#200a6b',
-      },
-    
-      'tertiary': {
-          //base - 700
-          '50': '#fef7ee',
-          '100': '#fdecd7',
-          '200': '#f9d5af',
-          '300': '#f5b77c',
-          '400': '#f18f46',
-          '500': '#ed7022',
-          '600': '#de5718',
-          '700': '#c94718',//
-          '800': '#933519',
-          '900': '#762e18',
-          '950': '#40150a',
-      },
-    
-      },
+          50: 'var(--secondary-50)',
+          100: 'var(--secondary-100)',
+          200: 'var(--secondary-200)',
+          300: 'var(--secondary-300)',
+          400: 'var(--secondary-400)',
+          500: 'var(--secondary-500)',
+          600: 'var(--secondary-600)',
+          700: 'var(--secondary-700)',
+          800: 'var(--secondary-800)',
+          900: 'var(--secondary-900)',
+          950: 'var(--secondary-950)',
+        },
+        'accent': {
+          50: 'var(--accent-50)',
+          100: 'var(--accent-100)',
+          200: 'var(--accent-200)',
+          300: 'var(--accent-300)',
+          400: 'var(--accent-400)',
+          500: 'var(--accent-500)',
+          600: 'var(--accent-600)',
+          700: 'var(--accent-700)',
+          800: 'var(--accent-800)',
+          900: 'var(--accent-900)',
+          950: 'var(--accent-950)',
+        },
+       },       
     },
   },
-  plugins: [],
+  plugins: [
+
+  ],
 };
 
 export default config;

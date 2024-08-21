@@ -2,14 +2,11 @@
 
 //Imports
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import { exo2, orbitron } from "./fonts"
 
 //Global components
 import Navbar from "./components/Navbar";
-
-//Font
-const inter = Inter({ subsets: ["latin"] });
 
 //Set metadata
 export const metadata: Metadata = {
@@ -24,8 +21,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className={`${orbitron.variable} ${exo2.variable}`}>
+      <body className={exo2.className}>
+      {/* <body className="font-sans"> */}
         {/* Insert global nav bar component */}
         <Navbar />
 

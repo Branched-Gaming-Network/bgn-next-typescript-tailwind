@@ -28,20 +28,20 @@ const Navbar = () => {
                                 className="flex items-center py-5 px-3 "
                             >
                                 <Image width='70' src={placeholder} alt='Placeholder alternate text' className='px-4' />
-                                <span className="font-bold text-xl">Title</span>
+                                <span className="font-bold font-sans text-xl">Title</span>
                             </Link>
                         </div>
                         {/* Primary Nav */}
                         <div className="hidden md:flex items-center space-x-3">
                             <Link 
                                 href="/" 
-                                className="py-5 px-3 font-semiboldhover:text-gray-300"
+                                className="py-5 px-3 font-semibold hover:text-gray-500"
                             >
                                 Prim Item 1
                             </Link>
                             <Link 
                                 href="/" 
-                                className="py-5 px-3 font-semiboldhover:text-gray-300"
+                                className="py-5 px-3 font-semibold hover:text-gray-500"
                             >
                                 Prim Item 2
                             </Link>
