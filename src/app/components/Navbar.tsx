@@ -28,7 +28,7 @@ const Navbar = () => {
                                 className="flex items-center py-5 px-3 "
                             >
                                 <Image width='70' src={placeholder} alt='Placeholder alternate text' className='px-4' />
-                                <span className="font-bold font-sans text-xl">Title</span>
+                                <span className="font-bold font-sans text-2xl">Title</span>
                             </Link>
                         </div>
                         {/* Primary Nav */}
