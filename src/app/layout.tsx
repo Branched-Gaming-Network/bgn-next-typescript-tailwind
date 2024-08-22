@@ -23,16 +23,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${orbitron.variable} ${exo2.variable}`}>
-      <body className={`${exo2.className} pb-48`}>
+      <body className={`${exo2.className}`}>
       {/* <body className="font-sans"> */}
         {/* Insert global nav bar component */}
         <Navbar />
 
         {/* Insert pages */}
         {children}
-
+        <Footer/>
       </body>
-      <Footer/>
     </html>
   );
 }
