@@ -7,6 +7,7 @@ import { exo2, orbitron } from "./fonts"
 
 //Global components
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 //Set metadata
 export const metadata: Metadata = {
@@ -22,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${orbitron.variable} ${exo2.variable}`}>
-      <body className={exo2.className}>
+      <body className={`${exo2.className} pb-48`}>
       {/* <body className="font-sans"> */}
         {/* Insert global nav bar component */}
         <Navbar />
@@ -31,6 +32,7 @@ export default function RootLayout({
         {children}
 
       </body>
+      <Footer/>
     </html>
   );
 }

@@ -2,17 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 
+Light Mode
+foreground-rgb - font color 
+background-start - start of gradient bg (top)
+background-end - end of gradient bg (bottom) 
+*/
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 13, 13, 13;
+  --background-start-rgb: 242, 242, 242;
+  --background-end-rgb: 204, 204, 204;
 }
 
+/* 
+Dark Mode
+foreground-rgb - font color 
+background-start - start of gradient bg (top)
+background-end - end of gradient bg (bottom) 
+*/
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 242, 242, 242; 
+    --background-start-rgb: 13, 13, 13;
+    --background-end-rgb: 13, 13, 13;
   }
 }
 

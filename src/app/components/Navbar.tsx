@@ -16,7 +16,7 @@ const Navbar = () => {
     }
 
     return ( 
-        <nav className="z-20 fixed top-0 right-0 left-0 bg-primary-100 dark:bg-primary-950">
+        <nav className="z-20 rounded-lg shadow mx-4 my-2 bg-background-100 dark:bg-background-900 fixed top-0 right-0 left-0">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between">
                     {/* Primary Nav and Logo */}
@@ -28,7 +28,7 @@ const Navbar = () => {
                                 className="flex items-center py-5 px-3 "
                             >
                                 <Image width='70' src={placeholder} alt='Placeholder alternate text' className='px-4' />
-                                <span className="font-bold font-sans text-2xl">Title</span>
+                                <span className="font-bold font-sans text-xl">Brand</span>
                             </Link>
                         </div>
                         {/* Primary Nav */}
@@ -82,14 +82,14 @@ const Navbar = () => {
             <div className="hidden mobile-menu md:hidden text-center transition duration-500" ref={menuRef}>
                 <Link 
                     href="/" 
-                    className="block font-semibold py-4 px-4 text-sm bg-primary-100/60 dark:bg-primary-950/60 backdrop-blur-md outline-primary-200/30 dark:outline-primary-800/30 outline" 
+                    className="block font-semibold py-4 px-4 text-sm bg-primary-100/60 dark:bg-primary-950/60 backdrop-blur-md" 
                     onClick={toggleMobileMenu}
                 >
                     Mobile Item 1
                 </Link>
                 <Link 
                     href="/" 
-                    className="block font-semibold py-4 px-4 text-sm bg-primary-100/60 dark:bg-primary-950/60 backdrop-blur-md outline-primary-200/30 dark:outline-primary-800/30 outline" 
+                    className="block font-semibold py-4 px-4 text-sm bg-primary-100/60 dark:bg-primary-950/60 backdrop-blur-md" 
                     onClick={toggleMobileMenu}
                 >
                     Mobile Item 2
