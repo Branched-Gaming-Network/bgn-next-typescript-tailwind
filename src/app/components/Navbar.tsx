@@ -27,7 +27,7 @@ const Navbar = () => {
                                 href="/" 
                                 className="flex items-center py-5 px-3 "
                             >
-                                <Image width='70' src={placeholder} alt='Placeholder alternate text' className='px-4' />
+                                <Image width='60' src={placeholder} alt='Placeholder alternate text' className='mx-4 invert dark:invert-0' />
                                 <span className="font-bold font-sans text-xl">Brand</span>
                             </Link>
                         </div>
