@@ -50,7 +50,7 @@ html,body,main,p {
   font-family: var(--font-exo2);
 }
  
-h1,h2,h3 {
+h1,h2,h3,button {
   font-family: var(--font-orbitron);
 }
 

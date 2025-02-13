@@ -30,13 +30,13 @@ const Navbar = () => {
                   alt="Placeholder alternate text"
                   className="mx-4 invert dark:invert-0"
                 />
-                <span className="font-bold font-sans text-primary-500 text-2xl">
+                <span className="font-bold font-sans text-primary-500 lg:text-3xl text-2xl">
                   Branched
                 </span>
               </Link>
             </div>
             {/* Primary Nav */}
-            <div className="hidden md:flex items-center space-x-3">
+            <div className="hidden md:flex items-center space-x-3 text-lg">
               <Link
                 href="/"
                 className="py-5 px-3 font-semibold hover:text-gray-500"
@@ -52,7 +52,7 @@ const Navbar = () => {
             </div>
           </div>
           {/* Secondary Nav */}
-          <div className="hidden md:flex items-center space-x-1">
+          <div className="hidden md:flex items-center space-x-1 text-lg">
             <Link
               href="/"
               className="py-5 px-3 font-semibold hover:text-gray-500"
@@ -61,7 +61,7 @@ const Navbar = () => {
             </Link>
             <Link
               href="/"
-              className="py-5 px-3 font-semibold hover:text-gray-500"
+              className="py-5 px-3 font-semibold hover:text-gray-500 "
             >
               Creators
             </Link>
@@ -100,14 +100,14 @@ const Navbar = () => {
       >
         <Link
           href="/"
-          className="block font-semibold py-4 px-4 text-sm bg-primary-100/60 dark:bg-primary-950/60 backdrop-blur-md"
+          className="block font-semibold py-4 px-4 text-md bg-primary-100/60 dark:bg-primary-950/60 backdrop-blur-md"
           onClick={toggleMobileMenu}
         >
           Join Our Discord!
         </Link>
         <Link
           href="/"
-          className="block font-semibold py-4 px-4 text-sm bg-primary-100/60 dark:bg-primary-950/60 backdrop-blur-md"
+          className="block font-semibold py-4 px-4 text-md bg-primary-100/60 dark:bg-primary-950/60 backdrop-blur-md"
           onClick={toggleMobileMenu}
         >
           Mobile Item 2
