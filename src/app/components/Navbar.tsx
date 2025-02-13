@@ -7,6 +7,7 @@ import Image from "next/image";
 
 //Asset Imports
 import brandlogo from "../../../brand-art/brandlogo.svg";
+import TreeSVG from "../../../brand-art/TreeSVG";
 
 const Navbar = () => {
   const menuRef = useRef<HTMLInputElement | null>(null);
@@ -24,12 +25,13 @@ const Navbar = () => {
             {/* Logo */}
             <div>
               <Link href="/" className="flex items-center py-1 px-1 ">
-                <Image
+                {/* <Image
                   width="80"
-                  src={brandlogo}
+                  src={TreeSVG}
                   alt="Placeholder alternate text"
                   className="mx-4 invert dark:invert-0"
-                />
+                /> */}
+                <TreeSVG className="w-12 fill-primary-500 mx-4 invert dark:invert-0"/>
                 <span className="font-bold font-sans text-primary-500 lg:text-3xl text-2xl">
                   Branched
                 </span>
@@ -66,7 +68,7 @@ const Navbar = () => {
               Creators
             </Link>
             <Link
-              href="/"
+              href="/discord"
               className="py-5 px-3 font-semibold text-primary-500 hover:text-gray-500"
             >
               Join Our Discord!

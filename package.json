@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "motion": "^12.4.2",
     "next": "^15.2.0-canary.33",
     "node": "^18.18.0",
     "react": "^18",

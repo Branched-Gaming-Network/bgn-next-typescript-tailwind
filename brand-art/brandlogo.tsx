@@ -1,6 +1,9 @@
+import { motion } from 'motion/react';
+
 export default function BrandLogo(props: any) {
   return (
     <svg
+      
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1573 1627"
     //   width={props.width ?? "1573"}
@@ -9,6 +12,7 @@ export default function BrandLogo(props: any) {
     //   opacity={props.opacity ?? "100"}
       {...props}
     >
+      
       <g
         fill={props.fill ?? "#15b740"}
         fillOpacity="0.0"
@@ -4282,6 +4286,7 @@ C 607.30 1413.79 620.89 1416.95 631.00 1418.00
 C 636.06 1412.08 642.84 1399.98 651.00 1402.00 Z"
         />
       </g>
+     
     </svg>
   );
 }

@@ -1,6 +1,8 @@
 // Landing Page
 // app\page.tsx -> url/
 import BrandLogo from "../../brand-art/brandlogo";
+import { Connect } from "../../brand-art/connect";
+import TreeSVG from "../../brand-art/TreeSVG";
 
 export default function Home() {
   return (
@@ -12,9 +14,9 @@ export default function Home() {
           </h1>
           <p className="pl-12 pt-12 text-2xl text-text-200">
             Find your home for new and exciting experiences. Connect with our
-            community of streamers, gamers, enthusiasts, and everything else in
+            community of streamers, gamers, enthusiasts, and everyone in
             between and discover endless ventures to explore. Cultivate your
-            discord experience to fit{" "}
+            experience to fit{" "}
             <span className="font-semibold italic">your tastes</span> using our
             array of community tags, roles, and bot commands.
           </p>
@@ -27,14 +29,14 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="lg:w-2/5 w-full lg:visible invisible">
-          <BrandLogo />
+        <div className="lg:w-2/5 w-full lg:visible invisible flex justify-center">
+          <TreeSVG className="w-4/5 fill-primary-500 "/>
         </div>
       </div>
       <div className="min-w-full px-12 flex">
-        <div className="lg:w-2/5 w-full lg:visible invisible">
+        <div className="lg:w-2/5 w-full lg:visible invisible flex justify-center">
           {/* Connected svg placeholder */}
-          <BrandLogo />
+          <Connect className="w-4/5" fill="#15b740"/>
         </div>
         <div className="lg:w-3/5 w-full h-full flex flex-col mt-24 ">
           <h1 className="font-black text-7xl text-left text-text-100">
