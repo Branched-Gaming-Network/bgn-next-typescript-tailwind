@@ -33,7 +33,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "brand-art/tree-right.tsx"  ],
   "exclude": [
     "node_modules"
   ]

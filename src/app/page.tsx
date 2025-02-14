@@ -2,23 +2,24 @@
 // app\page.tsx -> url/
 import BrandLogo from "../../brand-art/brandlogo";
 import { Connect } from "../../brand-art/connect";
+import TreeLeft from "../../brand-art/tree-left";
+import TreeRight from "../../brand-art/tree-right";
 import TreeSVG from "../../brand-art/TreeSVG";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen min-w-full flex-col items-center justify-between">
-      <div className="min-w-full px-28 pt-40 flex ">
-        <div className="lg:w-3/5 w-full h-full flex flex-col mt-24 ">
+    <main className="flex min-h-screen min-w-full flex-col items-center justify-between py-24">
+      <div className="min-w-full px-28 flex py-24">
+        <div className="lg:w-3/5 w-full flex flex-col mt-24 ">
           <h1 className="font-black text-7xl text-left text-text-100">
             Branch Out...
           </h1>
           <p className="pl-12 pt-12 text-2xl text-text-200">
             Find your home for new and exciting experiences. Connect with our
-            community of streamers, gamers, enthusiasts, and everyone in
-            between and discover endless ventures to explore. Cultivate your
-            experience to fit{" "}
-            <span className="font-semibold italic">your tastes</span> using our
-            array of community tags, roles, and bot commands.
+            community of streamers, gamers, enthusiasts, and everyone in between
+            and discover endless ventures to explore. Cultivate your experience
+            to fit <span className="font-semibold italic">your tastes</span>{" "}
+            using our array of community tags, roles, and bot commands.
           </p>
           <div className="flex min-w-full">
             <button className="py-1 text-xl font-semibold drop-shadow-2xl shadow-background-50 w-1/4 rounded-xl ml-12 mt-12 bg-secondary-600 text-text-50 hover:bg-secondary-500 hover:text-text-950 transition ease-in-out hover:scale-105 duration-150">
@@ -29,16 +30,19 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="lg:w-2/5 w-full lg:visible invisible flex justify-center">
-          <TreeSVG className="w-4/5 fill-primary-500 "/>
+        <div className="lg:w-2/5 w-full max-h-[600px] lg:visible invisible flex justify-center">
+          {/* <TreeSVG className="w-4/5 fill-primary-500 " /> */}
+          <TreeRight className="w-4/5 fill-primary-500"/>
         </div>
       </div>
-      <div className="min-w-full px-12 flex">
-        <div className="lg:w-2/5 w-full lg:visible invisible flex justify-center">
+
+      <div className="min-w-full  px-28 flex py-24 mb-24">
+        <div className="lg:w-2/5 w-full max-h-[600px] lg:visible invisible flex justify-center">
           {/* Connected svg placeholder */}
-          <Connect className="w-4/5" fill="#15b740"/>
+          {/* <Connect className="w-4/5" fill="#15b740" /> */}
+          <TreeLeft className=" fill-primary-500"/>
         </div>
-        <div className="lg:w-3/5 w-full h-full flex flex-col mt-24 ">
+        <div className="lg:w-3/5 w-full flex flex-col mt-24 ">
           <h1 className="font-black text-7xl text-left text-text-100">
             Get Connected...
           </h1>
@@ -58,10 +62,17 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="w-full px-12 flex justify-center space-x-4">
         <h1 className="text-xl font-semibold my-auto ">Stay up to date:</h1>
-        <textarea className="bg-transparent resize-none outline outline-1 rounded-md outline-background-600 text-left pl-2 flex justify-center" placeholder="johndoe@email.com" rows={1}></textarea>
-        <button className="ml-8 px-8 font-semibold font-mono outline outline-secondary-600 drop-shadow-xl rounded-xl text-text-100 transition ease-in-out hover:scale-105 duration-300">Submit</button>
+        <textarea
+          className="bg-transparent resize-none outline outline-1 rounded-md outline-background-600 text-left pl-2 flex justify-center"
+          placeholder="johndoe@email.com"
+          rows={1}
+        ></textarea>
+        <button className="ml-8 px-8 font-semibold font-mono outline outline-secondary-600 drop-shadow-xl rounded-xl text-text-100 transition ease-in-out hover:scale-105 duration-300">
+          Submit
+        </button>
       </div>
       {/* <div className="static top-0">
         <BrandLogo className="min-h-screen min-w-screen opacity-100" fill="#121212"/>
