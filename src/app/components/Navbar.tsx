@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="z-20 rounded-lg shadow mx-4 my-2 bg-background-100 dark:bg-background-900 fixed top-0 right-0 left-0">
+    <nav className="z-10 rounded-lg shadow mx-4 my-2 bg-background-100 dark:bg-background-900 fixed top-0 right-0 left-0">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between">
           {/* Primary Nav and Logo */}

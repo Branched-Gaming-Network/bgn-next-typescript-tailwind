@@ -1,5 +1,5 @@
 // Landing Page
-// app\page.tsx -> url/
+// app\page.tsx -> url/test
 import TreeLeft from "../../../brand-art/tree-left";
 import TreeRight from "../../../brand-art/tree-right";
 import TreeSVG from "../../../brand-art/TreeSVG";

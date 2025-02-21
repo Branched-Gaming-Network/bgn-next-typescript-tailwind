@@ -8,10 +8,11 @@ import { exo2, orbitron } from "./fonts"
 //Global components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import IntroAnimation from "./components/IntroAnimation";
 
 //Set metadata
 export const metadata: Metadata = {
-  title: "Branched | Landing",
+  title: "Branched | Home",
   description: "Branched Gaming Network landing page.",
 };
 
@@ -24,11 +25,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${orbitron.variable} ${exo2.variable}`}>
       <body className={`${exo2.className}`}>
-      {/* <body className="font-sans"> */}
-        {/* Insert global nav bar component */}
+        {/* <IntroAnimation/> */}
         <Navbar />
-
-        {/* Insert pages */}
         {children}
         <Footer/>
       </body>
