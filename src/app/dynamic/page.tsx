@@ -20,7 +20,7 @@ export default async function Dynamic() {
     //const data = await getData();
 
     return (
-        <main>
+        <main className="min-h-screen">
             <div className="text-black dark:text-white">This is a route that brings in data from a server</div>
 
             {/* Map over data to display */}
