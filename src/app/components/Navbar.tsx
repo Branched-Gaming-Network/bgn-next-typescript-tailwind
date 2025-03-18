@@ -3,10 +3,8 @@
 //Package / function imports
 import { useRef } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 //Asset Imports
-import brandlogo from "../../../brand-art/brandlogo.svg";
 import TreeSVG from "../../../brand-art/TreeSVG";
 
 const Navbar = () => {
@@ -25,12 +23,6 @@ const Navbar = () => {
             {/* Logo */}
             <div>
               <Link href="/" className="flex items-center py-1 px-1 ">
-                {/* <Image
-                  width="80"
-                  src={TreeSVG}
-                  alt="Placeholder alternate text"
-                  className="mx-4 invert dark:invert-0"
-                /> */}
                 <TreeSVG className="w-12 fill-primary-500 mx-4 invert dark:invert-0"/>
                 <span className="font-bold font-sans text-primary-500 lg:text-3xl text-2xl">
                   Branched
@@ -45,28 +37,28 @@ const Navbar = () => {
               >
                 Home
               </Link>
-              <Link
-                href="/"
+              {/* <Link
+                href="/about"
                 className="py-5 px-3 font-semibold hover:text-gray-500"
               >
                 About
-              </Link>
+              </Link> */}
             </div>
           </div>
           {/* Secondary Nav */}
           <div className="hidden md:flex items-center space-x-1 text-lg">
-            <Link
-              href="/"
+            {/* <Link
+              href="/events"
               className="py-5 px-3 font-semibold hover:text-gray-500"
             >
               Events
             </Link>
             <Link
-              href="/"
+              href="/creators"
               className="py-5 px-3 font-semibold hover:text-gray-500 "
             >
               Creators
-            </Link>
+            </Link> */}
             <Link
               href="/discord"
               className="py-5 px-3 font-semibold text-primary-500 hover:text-gray-500"
@@ -107,13 +99,13 @@ const Navbar = () => {
         >
           Join Our Discord!
         </Link>
-        <Link
+        {/* <Link
           href="/"
           className="block font-semibold py-4 px-4 text-md bg-primary-100/60 dark:bg-primary-950/60 backdrop-blur-md"
           onClick={toggleMobileMenu}
         >
           Mobile Item 2
-        </Link>
+        </Link> */}
       </div>
     </nav>
   );
